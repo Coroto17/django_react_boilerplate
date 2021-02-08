@@ -1,7 +1,8 @@
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = "bdi@grm=8sx%qttvo!4e%yz!b_7@%x_-uyyiq4*cr=-q_l1t8c"
+SECRET_KEY = os.getenv("SECRET_KEY", None)
 DEBUG = True
 ALLOWED_HOSTS = []
 
