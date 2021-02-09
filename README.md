@@ -96,3 +96,16 @@ Check [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/index.html) t
 
 Serving static files in development and production with whitenoise [Check docs](http://whitenoise.evans.io/en/stable/index.html)
 
+## CREATE YOU .ENV FILE.
+
+For the project to work, you should make a .env file in the root folder, containing your needed env variables. In my case, i needed to change react app port and browser, and set the SECRET_KEY for the backend. So i ended up creating a .env file with content like this:
+```
+PORT=3033
+BROWSER="/mnt/c/Program Files (x86)/Google/Chrome Dev/Application/chrome.exe"
+SECRET_KEY="bdi@8sjhg&tvo!4e%yz!b_7@%x_-uyyiq4*cq_l1t8c"
+```
+The SECRET_KEY is some random string inside quotes...
+
+Then, you include these env vars in you current environment by running the command (linux) `source .env`.  
+You can check if these env vars are included in your current environment by calling them, e.g if you want to see the PORT: `echo $PORT`
+
