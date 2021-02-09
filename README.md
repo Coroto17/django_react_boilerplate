@@ -85,4 +85,13 @@ Steps to prepare the backend:
 * Make migrations: `python manage.py makemigrations`
 * Migrate: `python manage.py migrate`
 
-At this point you are good to go, creating your own models, serializers and so on.
+At this point you can start creating your custom models, serializers, and so on.
+
+### Useful links.
+
+If you want to understand what's going on, particulary with the web API, [check out the DRF documentation](https://www.django-rest-framework.org/). You can find here how to set token authentication, setting up serializers, manage permissions and authentication, and so on.
+
+Check [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/index.html) to know how to transform users registration and authentication into API endpoints.
+
+Serving static files in development and production with whitenoise [Check docs](http://whitenoise.evans.io/en/stable/index.html)
+
