@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Frontend and Backend core for a Django-React app.
+
+## Frontend create-react-app
+
+I'm gonna leave the original create-react-app README for future references.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +72,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Backend Django.
+
+Steps to prepare the backend:
+
+* Clone this repo: `git clone https://github.com/Coroto17/django_react_boilerplate.git`
+* Change directory to the repo folder.
+* Make a virtual env: `python3 -m pip venv venv`
+* Activate the venv `. venv/bin/activate`
+* Install packages `pip install -r requirements.py`
+* Make migrations: `python manage.py makemigrations`
+* Migrate: `python manage.py migrate`
+
+At this point you are good to go, creating your own models, serializers and so on.
