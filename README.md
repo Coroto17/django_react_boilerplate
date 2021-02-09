@@ -81,6 +81,7 @@ Steps to prepare the backend:
 * Change directory to the repo folder.
 * Make a virtual env: `python3 -m pip venv venv`
 * Activate the venv `. venv/bin/activate`
+* **Important:** Always check and upgrade pip inside your venv before installing anything there `pip install --upgrade pip`
 * Install packages `pip install -r requirements.py`
 * Make migrations: `python manage.py makemigrations`
 * Migrate: `python manage.py migrate`
